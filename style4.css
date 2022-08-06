@@ -1,0 +1,82 @@
+body {
+  background-image:url('../img/wallpaper.gif');
+  color: white;
+  font-family: 'VT323', monospace;
+  -webkit-animation: slide 15s linear infinite;
+}
+
+#quote-box {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  line-height: 2.3em;
+  text-align: center;
+  top: 50px;
+}
+
+#quotee {
+  font-size: 1.25em;
+}
+
+#quote {
+  font-size: 1.6em;
+}
+
+#loadQuote {
+  position: fixed;
+  width: 12em;
+  
+  left: 50%;
+  margin-left: -6em;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: blue;
+  padding: 10px 10px;
+  font-size: 2em;
+ 
+}
+
+#loadQuote.active {
+  background-color: rgba(255,255,255,.25);
+}
+
+#loadQuote:focus {
+  outline: none;
+
+}
+
+
+@-webkit-keyframes slide {
+    from { background-position: left 0; }
+    to { background-position: left -1790px; }
+}
+
+@media (min-width: 769px) {
+  /* custom quote box for large screen */
+  #quoteBox {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    line-height: 3em;
+    text-align: center;
+  }
+  #quotee {
+    font-size: 2em;
+  }
+  #quote {
+    font-size: 2.5em;
+  }
+  #loadQuote {
+    bottom: 100px;
+    font-size: 1.8em;
+
+  }
+  #loadQuote:hover {
+    background-color: rgba(255,255,255,.25);
+  }
+
+}
